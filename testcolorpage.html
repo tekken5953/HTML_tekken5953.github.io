@@ -3,7 +3,9 @@
 <head>
  <meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
-	html,body {width:200vh; height:100vh}
+html,body {width:200vh; height:100vh}
+nav, scroll-container {display:block; margin:0 auto; text-align: center;}
+nav {width: 100%; padding:5px; border:1px solid black;}
 #container {width: 200vh; height: 100vh; border: 1px solid #000; overflow: auto; scroll-snap-type: mandatory;
  -webkit-overflow-scrolling: touch;
 	-webkit-scroll-snap-type: mandatory;
@@ -18,12 +20,20 @@
 </style>
 <title>ColorSlidingExam</title></head>
 <body>
+<nav>
+ <a href="#page-1"><span>1</span></a>
+ <a href="#page-2"><span>2</span></a>
+ <a href="#page-3"><span>3</span></a>
+ <a href="#page-4"><span>4</span></a>
+ <a href="#page-5"><span>5</span></a>
+ <a href="#page-6"><span>6</span></a>
+</nav>
 <div id="container">
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
-  <div class="item">4</div>
-  <div class="item">5</div>
-  <div class="item">6</div>
+  <div class="item" id="page-1">1</div>
+  <div class="item" id="page-2">2</div>
+  <div class="item" id="page-3">3</div>
+  <div class="item" id="page-4">4</div>
+  <div class="item" id="page-5">5</div>
+  <div class="item" id="page-6">6</div>
 </div>
 </body></html>
