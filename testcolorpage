@@ -8,7 +8,8 @@
 .item:nth-child(3n+1) { background: #fff6be;}
 .item:nth-child(3n+2) { background: #ffa1ac;}
 </style>
-<title>ColorSlidingExam</title><body>
+<title>ColorSlidingExam</title></head>
+<body>
 <div id="container">
   <div class="item">1</div>
   <div class="item">2</div>
