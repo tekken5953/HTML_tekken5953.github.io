@@ -4,7 +4,7 @@
  <meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
 html,body {width:200vh; height:105vh; margin:0; overflow:hidden;}
-#loginBtn button {align-items:center; height:80px; width:150px; font-family:Georgia; font-size:2em;}
+#loginBtn button { height:80px; width:150px; font-family:Georgia; font-size:5px;}
 scroll-page {display:flex; align-items:center; justify-content:center; height:100%; font-size:5em;}
 #container {width: 200vh; height: 100vh; border: 1px solid #000; overflow:auto; scroll-snap-type:y mandatory;
  -webkit-overflow-scrolling: touch;
@@ -24,8 +24,9 @@ scroll-page {display:flex; align-items:center; justify-content:center; height:10
 <title>ColorSlidingExam</title></head>
 <body>
 <div id="container">
-  <scroll-page class="item" id="page-1">웰컴페이지
-    <li id="loginBtn"><button>시작하기</button></li></scroll-page>
+  <scroll-page class="item" id="page-1">
+    <ul><li>웰컴페이지</li>
+    <li id="loginBtn"><button>시작하기</button></li></ul></scroll-page>
   <scroll-page class="item" id="page-2">자기소개</scroll-page>
   <scroll-page class="item" id="page-3">자격증 및 경력소개</scroll-page>
   <scroll-page class="item" id="page-4">기술소개</scroll-page>
