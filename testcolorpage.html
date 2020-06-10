@@ -4,6 +4,7 @@
  <meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
 html,body {width:200vh; height:105vh; margin:0; overflow:hidden;}
+scroll-page {display:flex; align-items:center; justify-content:center; height:100%; font-size:5em;}
 #container {width: 200vh; height: 100vh; border: 1px solid #000; overflow:auto; scroll-snap-type:y mandatory;
  -webkit-overflow-scrolling: touch;
 	-webkit-scroll-snap-type: mandatory;
@@ -22,11 +23,11 @@ html,body {width:200vh; height:105vh; margin:0; overflow:hidden;}
 <title>ColorSlidingExam</title></head>
 <body>
 <div id="container">
-  <section class="item" id="page-1">웰컴페이지</section>
-  <section class="item" id="page-2">자기소개</section>
-  <section class="item" id="page-3">자격증 및 경력소개</section>
-  <section class="item" id="page-4">기술소개</section>
-  <section class="item" id="page-5" style="color: white; font-family:Georgia;">프로젝트 소개</section>
-  <section class="item" id="page-6" style="color: black; font-family:Georgia; font-weight: bold;">마치는페이지</section>
+  <scroll-page class="item" id="page-1">웰컴페이지</scroll-page>
+  <scroll-page class="item" id="page-2">자기소개</scroll-page>
+  <scroll-page class="item" id="page-3">자격증 및 경력소개</scroll-page>
+  <scroll-page class="item" id="page-4">기술소개</scroll-page>
+  <scroll-page class="item" id="page-5" style="color: white; font-family:Georgia;">프로젝트 소개</scroll-page>
+  <scroll-page class="item" id="page-6" style="color: black; font-family:Georgia; font-weight: bold;">마치는페이지</scroll-page>
 </div>
 </body></html>
