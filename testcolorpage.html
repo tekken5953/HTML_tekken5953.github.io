@@ -15,21 +15,21 @@ a {margin:10px;}
  -webkit-scroll-snap-coordinate: 0 0;
 	-ms-scroll-snap-coordinate: 0 0;
 	scroll-snap-coordinate: 0 0;}
-.item:nth-child(1) { background: url("https://i.imgur.com/ts0y4Il.jpg"); opacity: 0.5; height:110vh;}
-.item:nth-child(2) { background: url("https://i.imgur.com/ts0y4Il.jpg"); height:110vh;}
-.item:nth-child(3) { background: url("https://i.imgur.com/iUHbibX.jpg"); opacity: 0.5; height:110vh;}
-.item:nth-child(4) { background: url("https://i.imgur.com/iUHbibX.jpg"); height:110vh;}
-.item:nth-child(5) { background: url("https://i.imgur.com/ts0y4Il.jpg"); background-color: rgba( 76, 175, 80, 0.3 ); height:110vh;}
-.item:nth-child(6) { background: url("https://i.imgur.com/iUHbibX.jpg"); background-color: rgba( 76, 175, 80, 0.3 ); height:110vh;}
+.item:nth-child(1) { background: url("https://i.imgur.com/ts0y4Il.jpg"); opacity: 0.5;}
+.item:nth-child(2) { background: url("https://i.imgur.com/ts0y4Il.jpg");}
+.item:nth-child(3) { background: url("https://i.imgur.com/iUHbibX.jpg"); opacity: 0.5;}
+.item:nth-child(4) { background: url("https://i.imgur.com/iUHbibX.jpg");}
+.item:nth-child(5) { background: url("https://i.imgur.com/ts0y4Il.jpg"); background-color: rgba( 76, 175, 80, 0.3 );}
+.item:nth-child(6) { background: url("https://i.imgur.com/iUHbibX.jpg"); background-color: rgba( 76, 175, 80, 0.3 );}
 </style>
 <title>ColorSlidingExam</title></head>
 <body>
-<div id="container">
-  <div class="item" id="page-1">웰컴페이지</div>
-  <div class="item" id="page-2">자기소개</div>
-  <div class="item" id="page-3">자격증 및 경력소개</div>
-  <div class="item" id="page-4">기술소개</div>
-  <div class="item" id="page-5" style="color: white; font-family:Georgia;">프로젝트 소개</div>
-  <div class="item" id="page-6" style="color: black; font-family:Georgia; font-weight: bold;">마치는페이지</div>
-</div>
+<scroll-container id="container">
+  <scroll-page class="item" id="page-1">웰컴페이지</scroll-page>
+  <scroll-page class="item" id="page-2">자기소개</scroll-page>
+  <scroll-page class="item" id="page-3">자격증 및 경력소개</scroll-page>
+  <scroll-page class="item" id="page-4">기술소개</scroll-page>
+  <scroll-page class="item" id="page-5" style="color: white; font-family:Georgia;">프로젝트 소개</scroll-page>
+  <scroll-page class="item" id="page-6" style="color: black; font-family:Georgia; font-weight: bold;">마치는페이지</scroll-page>
+</scroll-container>
 </body></html>
