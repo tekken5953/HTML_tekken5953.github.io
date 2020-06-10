@@ -6,7 +6,7 @@
 html,body {width:200vh; height:105vh; margin:0; overflow:hidden;}
 #loginBtn button {margin-left:100px; align-items:center; height:60px; width:200px; font-family:Georgia; font-size:15px;}
 scroll-page {display:flex; align-items:center; justify-content:center; height:100%; font-size:5em;}
-div {scroll-behavior:smooth;}
+scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
 ul {list-style:none;}
 #container {width: 200vh; height: 100vh; border: 1px solid #000; overflow:auto; scroll-snap-type:y mandatory;
  -webkit-overflow-scrolling: touch;
@@ -25,7 +25,7 @@ ul {list-style:none;}
 </style>
 <title>ColorSlidingExam</title></head>
 <body>
-<div id="container">
+<scroll-container id="container">
   <scroll-page class="item" id="page-1" style="color: white; font-family:Georgia; font-weight: bold;">
     	   <ul><li>웰컴페이지</li>
 	   <a href="#page-2" id="loginBtn"><button>시작하기</button></a></ul></scroll-page>
@@ -34,5 +34,5 @@ ul {list-style:none;}
   <scroll-page class="item" id="page-4" style="color: white; font-family:Georgia; font-weight: bold;">기술소개</scroll-page>
   <scroll-page class="item" id="page-5" style="color: white; font-family:Georgia; font-weight: bold;">프로젝트 소개</scroll-page>
   <scroll-page class="item" id="page-6" style="color: black; font-family:Georgia; font-weight: bold;">마치는페이지</scroll-page>
-</div>
+</scroll-container>
 </body></html>
