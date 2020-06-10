@@ -6,7 +6,7 @@
 html,body {width:200vh; height:105vh; margin:0; overflow:hidden;}
 #loginBtn button {align-items:center; height:60px; width:200px; font-family:Georgia; font-size:15px;}
 scroll-page {display:flex; align-items:center; justify-content:center; height:100%; font-size:5em;}
-li {list-style:none; display:inline-block;}
+ul {list-style:none;}
 #container {width: 200vh; height: 100vh; border: 1px solid #000; overflow:auto; scroll-snap-type:y mandatory;
  -webkit-overflow-scrolling: touch;
 	-webkit-scroll-snap-type: mandatory;
@@ -26,8 +26,8 @@ li {list-style:none; display:inline-block;}
 <body>
 <div id="container">
   <scroll-page class="item" id="page-1">
-    <ul><li>웰컴페이지</li>
-	    <li id="loginBtn"><span><button>시작하기</button></span></li></ul></scroll-page>
+    	   <ul><li>웰컴페이지</li>
+	   <li id="loginBtn"><button>시작하기</button></li></ul></scroll-page>
   <scroll-page class="item" id="page-2" style="color: white;>자기소개</scroll-page>
   <scroll-page class="item" id="page-3" style="color: white;>자격증 및 경력소개</scroll-page>
   <scroll-page class="item" id="page-4" style="color: white;>기술소개</scroll-page>
