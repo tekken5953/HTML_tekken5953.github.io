@@ -14,13 +14,14 @@ scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
  -webkit-scroll-snap-coordinate: 0 0;
 	-ms-scroll-snap-coordinate: 0 0;
 	-scroll-snap-align:start;}
-.button {width: 140px; margin-bottom: 150dp; height: 45px; font-family: 'Roboto', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px;
+.button {width: 140px; height: 45px; font-family: 'Roboto', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px;
   font-weight: 500; color: #000; background-color: #fff; border: none; border-radius: 45px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); transition: all 0.3s ease 0s; cursor: pointer; outline: none;}
 .button:hover {background-color: #f3bf41; box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); color: #fff; transform: translateY(-7px);}
-.wrap {height: 100%; display: flex; align-items: flex-end; justify-content: center;}
-.button2 {width: 140px; height: 45px; margin-bottom: 50dp; font-family: 'Roboto', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px;
+.wrap {height: 100%; margin-bottom: 150dp; display: flex; align-items: flex-end; justify-content: center;}
+.button2 {width: 140px; height: 45px; font-family: 'Roboto', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px;
   font-weight: 500; color: #000; background-color: #fff; border: none; border-radius: 45px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); transition: all 0.3s ease 0s; cursor: pointer; outline: none;}
 .button2:hover {background-color: #f3bf41; box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); color: #fff; transform: translateY(-7px);}
+.wrap2 {height: 100%; margin-bottom: 50dp; display: flex; align-items: flex-end; justify-content: center;}
 .item:nth-child(1) { background: url("https://tekken5953.github.io/open.png");}
 .item:nth-child(2) { background: url("https://tekken5953.github.io/introduce.png");}
 .item:nth-child(3) { background: url("https://tekken5953.github.io/technology.png");}
@@ -44,6 +45,6 @@ scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
   <scroll-page class="item" id="page-7"></scroll-page>
   <scroll-page class="item" id="page-8"></scroll-page>
   <scroll-page class="item" id="page-9"></scroll-page>
-  <scroll-page class="item" id="page-10"><button class="button2" onclick="location.href='#page-1'">Top</button></div></scroll-page>
+  <scroll-page class="item" id="page-10"><div class="wrap2"><button class="button2" onclick="location.href='#page-1'">Top</button></div></scroll-page>
 </scroll-container>
 </body></html>
