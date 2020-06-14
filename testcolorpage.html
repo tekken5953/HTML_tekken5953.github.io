@@ -5,7 +5,7 @@
 <style>
 html,body {width:100%; height:105vh; margin:0px; overflow:hidden; justify-content:center;}
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js">
-jQuery(document).ready(function($) {$(".button").click(function(event){event.preventDefault();
+jQuery(document).ready(function($) {$(".scroll").click(function(event){event.preventDefault();
 	$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);});});</script>
 scroll-page {display:flex; align-items:center; justify-content:center; height:100%; font-size:5em; }
 scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
@@ -35,7 +35,7 @@ scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
 <title>ColorSlidingExam</title></head>
 <body>
 <scroll-container id="container">
-  <scroll-page class="item" id="page-1"><div class="wrap"><button class="button" onclick="location.href='#page-2'">Enter</button></div></scroll-page>
+  <scroll-page class="item" id="page-1"><div class="wrap"><button class="scroll" onclick="location.href='#page-2'">Enter</button></div></scroll-page>
   <scroll-page class="item" id="page-2"></scroll-page>
   <scroll-page class="item" id="page-3"></scroll-page>
   <scroll-page class="item" id="page-4"></scroll-page>
