@@ -17,7 +17,7 @@ scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
 .button {width: 140px; height: 45px; font-family: 'Roboto', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px;
   font-weight: 500; color: #000; background-color: #fff; border: none; border-radius: 45px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); transition: all 0.3s ease 0s; cursor: pointer; outline: none;}
 .button:hover {background-color: #f3bf41; box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); color: #fff; transform: translateY(-7px);}
-.wrap {height: 100%; margin-bottom: 170px; display: flex; align-items: flex-end; justify-content: center;}
+.wrap {height: 100%; display: flex; align-items: flex-end; justify-content: center;}
 .item:nth-child(1) { background: url("https://tekken5953.github.io/open.png");}
 .item:nth-child(2) { background: url("https://tekken5953.github.io/introduce.png");}
 .item:nth-child(3) { background: url("https://tekken5953.github.io/technology.png");}
@@ -32,7 +32,7 @@ scroll-container {overflow-y:scroll; scroll-behavior:smooth; display:block;}
 <title>ColorSlidingExam</title></head>
 <body>
 <scroll-container id="container">
-  <scroll-page class="item" id="page-1"><div class="wrap"><button class="button" onclick="location.href='#page-2'">Enter</button></div></scroll-page>
+  <scroll-page class="item" id="page-1"><div class="wrap"><button class="button" style="margin-bottom=150dp" onclick="location.href='#page-2'">Enter</button></div></scroll-page>
   <scroll-page class="item" id="page-2"></scroll-page>
   <scroll-page class="item" id="page-3"></scroll-page>
   <scroll-page class="item" id="page-4"></scroll-page>
